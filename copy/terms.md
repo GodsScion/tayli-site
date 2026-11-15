@@ -1,10 +1,10 @@
 # Tayli Terms of Use
 
 **Draft: not legal advice, and not yet reviewed by counsel.**
-Version 0.4 draft, 2026-11-14. Published by the Tayli project ("we", "us").
+Version 0.5 draft, 2026-11-15. Features marked **Not in this version** are described so you know what is planned; they do not run today. Published by the Tayli project ("we", "us").
 
 ## 1. Agreement
-You accept these Terms and the Privacy Policy by ticking the box and clicking "I agree" on Tayli's first-run screen. If you do not agree, do not use Tayli. Downloading or installing alone does not count as acceptance. Some features (browser, sites hostile to automation, your voiceprint, other people's voiceprints, recording, Discord calls, optional integrations) also need their own accept step. Those in-app texts are part of these Terms.
+You accept these Terms and the Privacy Policy by ticking the box and clicking "I agree" on Tayli's first-run screen. If you do not agree, do not use Tayli. Downloading or installing alone does not count as acceptance. Your voiceprint also needs its own accept step. Other features (browser, recording, Discord calls, optional integrations) run under these Terms without a separate dialog in this version; per-feature dialogs are **Not in this version**. Those in-app texts are part of these Terms.
 
 ## 2. Who may use Tayli
 **Tayli is for adults only. You must be 18 or older** (or the age of majority where you live, if higher). You promise the age you give is true. Do not use Tayli where using it is unlawful, and do not let anyone under 18 use it.
@@ -16,7 +16,7 @@ Tayli is free, open-source software: a voice assistant for macOS. It runs on you
 Tayli is a **supervised assistant**: it acts for you only while you watch it and stay in control.
 - **AI makes mistakes.** Tayli can mishear, misunderstand, invent facts, act on the wrong item, or do what you said instead of what you meant. Memory is probabilistic: it can forget or remember wrongly. Voice recognition gives a confidence score, never certainty, and can mistake one person for another. Never use voice recognition as a security or identity check.
 - **As between you and us, you are responsible for what Tayli does on your behalf**, including commands it runs, files it changes or deletes, messages it sends, purchases, forms, posts and actions on websites or accounts. Read approval cards before you approve them. Do not rely on Tayli for medical, legal, financial, emergency or safety-critical decisions, or anything where a mistake could cause death, injury, serious financial loss or legal harm, without checking it yourself.
-- Approval cards, safety checks, site ratings and the safety reviewer reduce risk. They do not remove it. No check is 100% accurate.
+- Approval cards, safety checks and the safety reviewer reduce risk. They do not remove it. No check is 100% accurate.
 - Background coding tasks run on your Mac with your user permissions and can reach the internet (for example to install packages). Keep backups.
 
 ## 5. Third-party services and integrations
@@ -26,12 +26,12 @@ Tayli works with services and software made by others, which are **not part of T
 - **We do not track or tell you about changes to third-party terms or policies.** Checking them is your responsibility.
 
 ## 6. Browser features
-Browser features are off until you accept their dialog. When on, Tayli opens and uses web pages for you, signed in as you wherever you are signed in in the browser it uses.
+Browser features are available whenever Tayli runs (a separate accept dialog is **Not in this version**). When used, Tayli opens and uses web pages for you, signed in as you wherever you are signed in in the browser it uses.
 - **Optional browser integration.** Tayli can instead work with browsertrail, a separate browser-automation tool that you download and install yourself. It is not included in or distributed with Tayli; it is third-party software under its own terms and privacy policy (section 5). Without it, Tayli uses its built-in browser.
 - Browser automation is designed to act the way a person using a normal browser does, at a person's pace. It does not get you past captchas, logins, paywalls or other access controls, and sites can still detect it.
 - Websites can treat automated use as a breach of their terms. This can lead to captchas, blocked IP addresses (which can affect everyone on your network), and **account suspension or permanent bans** (for example on professional networks, marketplaces or social sites). Those risks are yours.
 - Web pages can contain hidden instructions (prompt injection) or malware, and well-known sites can be compromised. Tayli tries to detect this and does not always succeed.
-- "Allow sites hostile to automation" is off by default and needs its own accept step. Our list of such sites is incomplete and sometimes wrong.
+- Tayli has no list of sites hostile to automation and no site safety lookups in this version (**Not in this version**); you decide which sites it opens.
 - You must follow the terms of each site you use. You must not use Tayli to break the law, to get past access controls, paywalls or authentication you are not entitled to, to scrape personal data unlawfully, or to send spam.
 
 ## 7. Listening, recording, voices and other people
@@ -45,7 +45,7 @@ Browser features are off until you accept their dialog. When on, Tayli opens and
   - Echo: she may hear herself.
   - While she is listening she transcribes nearby speech.
 - **Recording** (saving audio and logs of calls and sessions) is separate from voiceprints and is on by default. Recordings are saved only on this Mac, within a 2 GB total. Tayli does not announce recording aloud unless you turn on Announce recording in Settings, and you can turn recording off in Settings. **You alone are responsible for telling everyone and getting the consent the law requires before you record.** Many places require everyone on a call to agree before it is recorded (see Privacy Policy section 6). Whether or not the announcement is on, you are responsible for consent before you record or bring Tayli into a call, including Discord.
-- **Voiceprints.** Tayli asks a new person aloud before storing their voiceprint and stores it only if they say yes. Saying no stops only the voiceprint; Tayli still transcribes what they say while running. Do not let Tayli store a child's voiceprint, and do not trick Tayli into storing anyone's voiceprint without real consent. **If you are in Illinois, other people's voiceprints are off and you must not turn them on.** Some other laws may require more than a spoken yes (see Privacy Policy section 5).
+- **Voiceprints.** This version stores only your own voiceprint. Storing other people's voiceprints is **Not in this version**; when it ships, Tayli will ask a new person aloud and store it only if they say yes. Saying no stops only the voiceprint; Tayli still transcribes what they say while running. Do not let Tayli store a child's voiceprint, and do not trick Tayli into storing anyone's voiceprint without real consent. **If you are in Illinois, other people's voiceprints are off and you must not turn them on.** Some other laws may require more than a spoken yes (see Privacy Policy section 5).
 
 ## 8. Acceptable use
 Do not use Tayli to break the law; harm, harass, stalk, surveil or impersonate anyone; record or identify people without the consent the law requires; create malware or attack systems; defraud; or produce content that exploits minors. Do not disable safety checks to harm others.

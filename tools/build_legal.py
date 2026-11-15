@@ -1,6 +1,6 @@
 """Builds terms.html and privacy.html from copy/{terms,privacy}.md (copied verbatim from the app's docs/legal).
 
-Handles only what those files use: #/## headings, paragraphs, - lists (two-space nesting), | tables, **bold**.
+Handles only what those files use: #/## headings, paragraphs, - lists (two-space nesting), | tables, **bold**, `code`.
 Run: python3 tools/build_legal.py"""
 
 import html
@@ -15,7 +15,9 @@ PAGES = {
 
 
 def inline(text: str) -> str:
-    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html.escape(text, quote=False))
+    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html.escape(text, quote=False))
+    text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
+    return re.sub(r"<strong>(Not in this version\.?)</strong>", r'<strong class="nyv">\1</strong>', text)
 
 
 def cells(row: str) -> list[str]:

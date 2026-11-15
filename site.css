@@ -230,3 +230,14 @@ th {
     opacity: 0.6;
   }
 }
+
+/* "Not in this version" labels in the legal pages: a pill so unbuilt features stand out. */
+.nyv {
+  display: inline-block;
+  padding: 0 8px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.85em;
+  white-space: nowrap;
+}
