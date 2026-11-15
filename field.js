@@ -44,8 +44,10 @@ addEventListener("pointermove", (e) => {
   pointerY = e.clientY / innerHeight - 0.5;
 });
 
+// The still frame is drawn whenever the field's size changes: drawn once at script time it came out empty
+// when layout had not yet sized the field (WebKit, 1 in 10 loads).
 if (still) {
-  frame(0);
+  new ResizeObserver(() => frame(0)).observe(field);
 } else {
   requestAnimationFrame(loop);
 }
