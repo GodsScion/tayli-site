@@ -19,6 +19,10 @@
   --accent: oklch(0.45 0.12 220);
   --glyph: oklch(0.55 0.12 230 / 0.55);
   --radius: 14px;
+  /* Headline gradient: the presence hues, darkened in light mode for contrast on white. */
+  --h1a: oklch(0.5 0.17 248);
+  --h1b: oklch(0.52 0.12 205);
+  --h1c: oklch(0.52 0.11 165);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +34,9 @@
     --muted: oklch(0.78 0.008 265);
     --accent: oklch(0.84 0.12 200);
     --glyph: oklch(0.8 0.12 200 / 0.5);
+    --h1a: var(--p1);
+    --h1b: var(--p0);
+    --h1c: var(--p2);
   }
 }
 
@@ -107,7 +114,8 @@ nav a:hover {
 
 .hero-text {
   position: relative;
-  padding: 40px 0;
+  padding: 40px 20px;
+  background: radial-gradient(closest-side, var(--ground) 65%, transparent);
 }
 
 h1 {
@@ -116,7 +124,7 @@ h1 {
   font-size: clamp(40px, 8vw, 84px);
   line-height: 1.05;
   margin: 0 0 18px;
-  background: linear-gradient(100deg, var(--p1), var(--p0), var(--p2));
+  background: linear-gradient(100deg, var(--h1a), var(--h1b), var(--h1c));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
