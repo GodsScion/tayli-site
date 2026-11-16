@@ -1,4 +1,4 @@
-# Claude Code, out loud.
+# Tayli, a voice for the Claude Code you already use.
 
 Tayli is a voice assistant for your Mac. You talk to her like a phone call. She hears you with a speech model on your Mac, thinks with your own Claude Code sign-in, and answers aloud with a voice model on your Mac.
 
