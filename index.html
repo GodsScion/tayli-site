@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- DRAFT COPY for Sai's approval: title, description, every heading and paragraph on this page. -->
+    <title>Tayli: a voice assistant that runs on your Mac</title>
+    <meta
+      name="description"
+      content="Talk to your Mac like a phone call. Tayli answers aloud, runs coding tasks in your repos while you keep talking, and asks before anything risky. Speech stays on your Mac."
+    />
+    <link rel="canonical" href="https://tayli.org/" />
+    <meta
+      name="theme-color"
+      content="#f9fafb"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#111214"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tayli" />
+    <meta property="og:url" content="https://tayli.org/" />
+    <meta
+      property="og:title"
+      content="Tayli: talk to your Mac. Tayli gets it done."
+    />
+    <meta
+      property="og:description"
+      content="A local-first voice assistant for macOS. Speech stays on your Mac, risky steps wait for your OK."
+    />
+    <meta property="og:image" content="https://tayli.org/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Tayli's presence, a glowing ring of blue and teal points, beside the Tayli wordmark"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tayli: talk to your Mac. Tayli gets it done."
+    />
+    <meta
+      name="twitter:description"
+      content="A local-first voice assistant for macOS. Speech stays on your Mac, risky steps wait for your OK."
+    />
+    <meta name="twitter:image" content="https://tayli.org/og.png" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="preload"
+      href="/fonts/funnel-display-600-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Tayli",
+        "url": "https://tayli.org/",
+        "description": "A local-first voice assistant for macOS that answers aloud, runs coding tasks in your repos and asks before anything risky.",
+        "operatingSystem": "macOS",
+        "applicationCategory": "UtilitiesApplication",
+        "image": "https://tayli.org/og.png",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "SAVIGN" }
+      }
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="top wrap">
+      <a class="wordmark" href="/">Tayli</a>
+      <nav aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#get">Get Tayli</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero wrap">
+        <div>
+          <p class="eyebrow">Voice assistant for macOS</p>
+          <h1>Talk to your Mac. <span>Tayli gets it done.</span></h1>
+          <p class="lede">
+            Talk to her like a phone call. She answers out loud, starts work in
+            your projects while you keep talking, and asks before anything risky
+            happens.
+          </p>
+          <div class="actions">
+            <button
+              class="button primary"
+              id="play-demo"
+              type="button"
+              aria-pressed="false"
+            >
+              Play demo
+            </button>
+            <a class="button" href="#get">Get Tayli</a>
+          </div>
+        </div>
+        <div class="stage">
+          <canvas
+            id="presence"
+            role="img"
+            aria-label="Tayli's presence: a ring of glowing points that moves as she listens and speaks"
+          ></canvas>
+        </div>
+      </div>
+
+      <section id="features" aria-labelledby="features-title">
+        <div class="wrap">
+          <h2 id="features-title">A conversation, not a command line</h2>
+          <p class="section-lede">
+            Say what you want in plain words. Tayli keeps up, does the work and
+            checks in.
+          </p>
+          <div class="cards">
+            <article class="card">
+              <div class="dot" aria-hidden="true"></div>
+              <h3>Talks back instantly</h3>
+              <p>
+                She hears you and answers aloud in a natural voice, so it feels
+                like a call, not a chat box.
+              </p>
+            </article>
+            <article class="card">
+              <div class="dot" aria-hidden="true"></div>
+              <h3>Works while you talk</h3>
+              <p>
+                Ask for a job like "fix the failing test in my project". It runs
+                in your repo in the background while you keep the conversation
+                going.
+              </p>
+            </article>
+            <article class="card">
+              <div class="dot" aria-hidden="true"></div>
+              <h3>Nothing risky without your OK</h3>
+              <p>
+                Anything with outside effects waits for you. Say yes, tap
+                Approve, or confirm high-risk steps with Touch ID.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="privacy" aria-labelledby="privacy-title">
+        <div class="wrap">
+          <h2 id="privacy-title">Your voice stays on your Mac</h2>
+          <p class="section-lede">
+            Tayli is local first. Here is exactly what leaves your Mac and what
+            doesn't.
+          </p>
+          <ul class="facts">
+            <li>
+              <strong>Speech to text runs on your Mac.</strong>
+              <span
+                >Your audio is turned into text by a speech model on your own
+                machine, and her voice is made there too.</span
+              >
+            </li>
+            <li>
+              <strong>Recording is off by default.</strong>
+              <span
+                >If you turn it on, she tells you at the start of each
+                call.</span
+              >
+            </li>
+            <li>
+              <strong>No accounts, no Tayli servers.</strong>
+              <span
+                >There is nothing to sign up for, and Tayli runs no servers of
+                its own.</span
+              >
+            </li>
+            <li>
+              <strong>What goes to Anthropic.</strong>
+              <span>
+                To think and act, Tayli sends the text of your requests to
+                Anthropic's Claude, through your own Claude Code sign-in. Your
+                audio is never sent.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="demo" aria-labelledby="demo-title">
+        <div class="wrap">
+          <h2 id="demo-title">See a real call</h2>
+          <div class="video">
+            <!-- Demo clip slot: add <source src="/media/demo.mp4" type="video/mp4" /> once the video exists. -->
+            <video
+              controls
+              preload="none"
+              poster="/poster.jpg"
+              width="1280"
+              height="720"
+            >
+              Your browser cannot play this video.
+            </video>
+          </div>
+          <p class="caption">Demo video coming soon.</p>
+        </div>
+      </section>
+
+      <section id="get" class="get" aria-labelledby="get-title">
+        <div class="wrap">
+          <h2 id="get-title">Coming soon</h2>
+          <p class="section-lede">
+            Tayli is getting ready for her first public release. Want to hear
+            when she's out?
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="mailto:hello@tayli.org?subject=Tell%20me%20when%20Tayli%20is%20out"
+              >Email hello@tayli.org</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <nav aria-label="Elsewhere">
+          <!-- Placeholders until the GitHub org and Discord exist. -->
+          <a href="https://github.com/tayli">GitHub</a>
+          <a href="#">Discord</a>
+          <!-- Legal slot: Terms and Privacy links go here once the documents are final. -->
+        </nav>
+        <p>A SAVIGN product</p>
+      </div>
+    </footer>
+  </body>
+</html>
