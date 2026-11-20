@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "dev": "python3 tools/build_legal.py && vite",
+    "build": "python3 tools/build_legal.py && tsc --noEmit && vite build",
     "preview": "vite preview --port 4173 --strictPort",
     "lint": "eslint .",
     "format": "prettier --write .",

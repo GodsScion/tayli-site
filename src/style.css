@@ -372,3 +372,37 @@ footer nav a {
 footer p {
   margin: 0;
 }
+
+/* Legal pages (privacy.html, terms.html), built from legal/*.md by tools/build_legal.py. */
+.doc {
+  max-width: 760px;
+  padding-block: 48px 96px;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+.doc table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+.doc th,
+.doc td {
+  border: 1px solid var(--line);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.doc th {
+  background: var(--raised);
+}
+/* "Not in this version" labels: a pill so unbuilt features stand out. */
+.nyv {
+  display: inline-block;
+  padding: 0 8px;
+  border: 1px solid var(--accent-text);
+  border-radius: 999px;
+  color: var(--accent-text);
+  font-size: 0.85em;
+  white-space: nowrap;
+}
